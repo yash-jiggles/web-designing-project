@@ -1,0 +1,297 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+ {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-links 
+{
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+.home-section {
+  background-color: #dae2e7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.home-section h2 {
+  font-size: 2.5rem;
+  color: #2d2828;
+}
+
+.home-section span {
+  color: #00adb5;
+}
+
+.home-section p {
+  color: #423f3f;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00adb5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #007b80;
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.about-section h2 {
+  text-align: center;
+  color: #00adb5;
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.education-section {
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+}
+
+.education-section h2 {
+  text-align: center;
+  color: #00adb5;
+  margin-bottom: 1rem;
+}
+
+.eduskill-cont {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.education {
+  flex: 1;   
+  margin-bottom: 20px;   
+  background-color: white;
+  border-radius: 15px;         
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  transition: all 0.3s ease;    
+
+}
+
+.skills {
+  flex: 1;                 
+  background-color: white;
+  border-radius: 15px;         
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  transition: all 0.3s ease;   
+}
+.skills ul {
+  list-style: square inside;
+  margin-top: 10px;
+}
+
+
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: #00adb5;
+  margin-bottom: 2rem;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #c9c8c8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00adb5;
+  text-decoration: none;
+}
+
+
+.suggestions-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.suggestions-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.suggestions-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.suggestion-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.suggestion-form .btn {
+  display: block;
+  width: 100%;
+  background-color: #00abd5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-form .btn:hover {
+  background-color: #1626fa;
+}
+
+.contact-section {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.social-links a {
+  color: #00adb5;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
